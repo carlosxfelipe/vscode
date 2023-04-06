@@ -1,0 +1,82 @@
+{
+  // Editor
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.lineHeight": 22,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.renderLineHighlight": "gutter",
+  "editor.parameterHints.enabled": false,
+  // Prettier - Code formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Java prettier formatter
+  //"editor.defaultFormatter": "mwpb.java-prettier-formatter",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+
+  // Workbench
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Omni",
+  // "workbench.colorTheme": "Aura Dark",
+  // "workbench.colorTheme": "Gnome Light (Atom One)",
+
+  // Workbench Color Customizations
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#121016",
+    "statusBar.debuggingBackground": "#121016",
+    "statusBar.debuggingForeground": "#525156",
+    "debugToolBar.background": "#121016"
+  },
+
+  // Files
+  "files.insertFinalNewline": true,
+  "explorer.confirmDelete": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.js": "$(capture).*",
+    "*.jsx": "$(capture).*",
+    "*.ts": "$(capture).*",
+    "*.tsx": "$(capture).*"
+  },
+
+  // Terminal
+  "terminal.integrated.fontSize": 14,
+
+  // Extensions
+  "extensions.ignoreRecommendations": true,
+
+  // Git
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "git.openRepositoryInParentFolders": "always",
+
+  // JavaScript
+  "javascript.updateImportsOnFileMove.enabled": "never",
+
+  // ESLint
+  "eslint.format.enable": true,
+
+  // Dart
+  "[dart]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+
+  // Python
+  "[python]": {
+    "editor.formatOnType": true
+  },
+
+  // LLDB
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB"
+}
