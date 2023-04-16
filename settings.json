@@ -21,17 +21,19 @@
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "material-icon-theme",
+  // "workbench.colorTheme": "Dracula",
   "workbench.colorTheme": "Omni",
+  // "workbench.colorTheme": "Yaru Dark",
   // "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
 
   // Workbench Color Customizations
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#121016",
-    "statusBar.debuggingBackground": "#121016",
-    "statusBar.debuggingForeground": "#525156",
-    "debugToolBar.background": "#121016"
-  },
+  // "workbench.colorCustomizations": {
+  //   "statusBar.background": "#121016",
+  //   "statusBar.debuggingBackground": "#121016",
+  //   "statusBar.debuggingForeground": "#525156",
+  //   "debugToolBar.background": "#121016"
+  // },
 
   // Files
   "files.insertFinalNewline": true,
@@ -63,7 +65,7 @@
 
   // Dart
   "[dart]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
