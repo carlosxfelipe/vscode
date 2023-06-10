@@ -21,22 +21,16 @@
     "*.ipynb": "jupyter-notebook"
   },
   "workbench.iconTheme": "material-icon-theme",
+  // "material-icon-theme.activeIconPack": "qwik",
   // "workbench.colorTheme": "Dracula",
   "workbench.colorTheme": "Omni",
-  // "workbench.colorTheme": "Yaru Dark",
   // "workbench.colorTheme": "Aura Dark",
+  // "workbench.colorTheme": "DartPad",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
-
-  // Workbench Color Customizations
-  // "workbench.colorCustomizations": {
-  //   "statusBar.background": "#121016",
-  //   "statusBar.debuggingBackground": "#121016",
-  //   "statusBar.debuggingForeground": "#525156",
-  //   "debugToolBar.background": "#121016"
-  // },
 
   // Files
   "files.insertFinalNewline": true,
+  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
@@ -80,5 +74,10 @@
   },
 
   // LLDB
-  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB"
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "explorer.confirmDragAndDrop": false,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "terminal.integrated.env.osx": {},
+  "dart.checkForSdkUpdates": false
 }
