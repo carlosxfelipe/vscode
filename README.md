@@ -9,9 +9,13 @@ Na caixa de busca digite: “Preferences: Open Settings (JSON)”
 
 **TEMAS:**
 Dracula Official: https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula
+
 Omni Theme: https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni
+
 Aura Theme: https://marketplace.visualstudio.com/items?itemName=DaltonMenezes.aura-theme
+
 DartPad Theme: https://marketplace.visualstudio.com/items?itemName=Alejandro-FA.vscode-theme-dartpad
+
 Fedora GNOME light & dark themes: https://marketplace.visualstudio.com/items?itemName=olifink.fedora-gnome-light-dark
 
 Fonte FiraCode: https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode
