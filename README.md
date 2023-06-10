@@ -1,4 +1,4 @@
-**VSCode Settings**
+## VSCode Settings
 
 Para abrir as configurações utilize as combinações de teclas:
 
@@ -8,16 +8,23 @@ Windows/Linux: Control + Shift + P
 Na caixa de busca digite: “Preferences: Open Settings (JSON)”
 
 **TEMAS:**
-Dracula Official: https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula
 
-Omni Theme: https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni
+Dracula Official:
+`https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula`
 
-Aura Theme: https://marketplace.visualstudio.com/items?itemName=DaltonMenezes.aura-theme
+Omni Theme:
+`https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni`
 
-DartPad Theme: https://marketplace.visualstudio.com/items?itemName=Alejandro-FA.vscode-theme-dartpad
+Aura Theme:
+`https://marketplace.visualstudio.com/items?itemName=DaltonMenezes.aura-theme`
 
-Fedora GNOME light & dark themes: https://marketplace.visualstudio.com/items?itemName=olifink.fedora-gnome-light-dark
+DartPad Theme: `https://marketplace.visualstudio.com/items?itemName=Alejandro-FA.vscode-theme-dartpad`
 
-Fonte FiraCode: https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode
+Fedora GNOME light & dark themes:
+`https://marketplace.visualstudio.com/items?itemName=olifink.fedora-gnome-light-dark`
 
-Se estiver no Fedora Linux `sudo dnf install fira-code-fonts`
+Fonte FiraCode:
+`https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode`
+
+Se estiver no Fedora Linux
+`sudo dnf install fira-code-fonts`
