@@ -23,10 +23,11 @@
   "workbench.iconTheme": "material-icon-theme",
   // "material-icon-theme.activeIconPack": "qwik",
   // "workbench.colorTheme": "Dracula",
-  "workbench.colorTheme": "Omni",
+  // "workbench.colorTheme": "Omni",
   // "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "DartPad",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
+  "workbench.colorTheme": "Visual Studio 2019 Light",
 
   // Files
   "files.insertFinalNewline": true,
