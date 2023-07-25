@@ -23,9 +23,13 @@
   "workbench.iconTheme": "material-icon-theme",
   // "material-icon-theme.activeIconPack": "qwik",
   // "workbench.colorTheme": "Dracula",
-  "workbench.colorTheme": "Omni",
+  // "workbench.colorTheme": "Omni",
   // "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "DartPad",
+  // "workbench.colorTheme": "Shades of Purple (Super Dark)",
+  "workbench.colorTheme": "Shades of Purple",
+  // "workbench.colorTheme": "Solarized Dark+",
+  // "workbench.colorTheme": "Solarized Light+",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Visual Studio 2019 Light",
 
@@ -80,5 +84,6 @@
   "dart.debugExternalPackageLibraries": true,
   "dart.debugSdkLibraries": false,
   "terminal.integrated.env.osx": {},
-  "dart.checkForSdkUpdates": false
+  "dart.checkForSdkUpdates": false,
+  "redhat.telemetry.enabled": true
 }
