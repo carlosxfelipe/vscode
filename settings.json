@@ -8,10 +8,7 @@
   "editor.tabSize": 2,
   "editor.renderLineHighlight": "gutter",
   "editor.parameterHints.enabled": false,
-  // Prettier - Code formatter
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // Java prettier formatter
-  // "editor.defaultFormatter": "mwpb.java-prettier-formatter",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
 
@@ -24,10 +21,10 @@
   // "material-icon-theme.activeIconPack": "qwik",
   // "workbench.colorTheme": "Dracula",
   // "workbench.colorTheme": "Omni",
-  // "workbench.colorTheme": "Aura Dark",
+  "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "DartPad",
   // "workbench.colorTheme": "Shades of Purple (Super Dark)",
-  "workbench.colorTheme": "Shades of Purple",
+  // "workbench.colorTheme": "Shades of Purple",
   // "workbench.colorTheme": "Solarized Dark+",
   // "workbench.colorTheme": "Solarized Light+",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
@@ -62,9 +59,14 @@
   // ESLint
   "eslint.format.enable": true,
 
+  // Java
+  "[java]": {
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter",
+    "editor.inlayHints.enabled": "off"
+  },
+
   // Dart
   "[dart]": {
-    "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
