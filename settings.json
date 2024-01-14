@@ -10,7 +10,9 @@
   "editor.parameterHints.enabled": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
 
   // Workbench
   "workbench.startupEditor": "none",
@@ -20,15 +22,17 @@
   "workbench.iconTheme": "material-icon-theme",
   // "material-icon-theme.activeIconPack": "qwik",
   // "workbench.colorTheme": "Dracula",
-  "workbench.colorTheme": "Omni",
-  // "workbench.colorTheme": "Aura Dark",
+  // "workbench.colorTheme": "Omni",
+  "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "Shades of Purple (Super Dark)",
   // "workbench.colorTheme": "Shades of Purple",
   // "workbench.colorTheme": "Solarized Light+",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Visual Studio 2019 Light",
+  // "workbench.colorTheme": "Ra Spring",
 
   // Files
+  "files.eol": "\n",
   "files.insertFinalNewline": true,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -63,6 +67,11 @@
     "editor.inlayHints.enabled": "off"
   },
 
+  // Kotlin
+  "[kotlin]": {
+    "editor.defaultFormatter": "fwcd.kotlin"
+  },
+
   // Dart
   "[dart]": {
     "editor.formatOnType": true,
@@ -70,7 +79,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
 
   // Python
@@ -87,5 +96,7 @@
   "dart.checkForSdkUpdates": false,
   "redhat.telemetry.enabled": true,
   "kotlin.languageServer.enabled": false,
-  "kotlin.debugAdapter.enabled": false
+  "kotlin.debugAdapter.enabled": false,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "window.menuBarVisibility": "compact"
 }

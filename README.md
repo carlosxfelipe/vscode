@@ -16,6 +16,11 @@ In the search box, type "Preferences: Open Settings (JSON)".
 - [Solarized](https://marketplace.visualstudio.com/items?itemName=ryanolsonx.solarized)
 - [Fedora GNOME light & dark themes](https://marketplace.visualstudio.com/items?itemName=olifink.fedora-gnome-light-dark)
 - [Visual Studio 2019 Light](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+- [Ra Spring Light Theme](https://marketplace.visualstudio.com/items?itemName=rahmanyerli.ra-spring)
+
+**Icons**
+
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 **Font:**
 
