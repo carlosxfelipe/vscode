@@ -2,7 +2,7 @@
   // Editor
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.lineHeight": 22,
   "editor.rulers": [80],
   "editor.tabSize": 2,
@@ -21,12 +21,8 @@
   },
   "workbench.iconTheme": "material-icon-theme",
   // "material-icon-theme.activeIconPack": "qwik",
-  // "workbench.colorTheme": "Dracula",
   // "workbench.colorTheme": "Omni",
   "workbench.colorTheme": "Aura Dark",
-  // "workbench.colorTheme": "Shades of Purple (Super Dark)",
-  // "workbench.colorTheme": "Shades of Purple",
-  // "workbench.colorTheme": "Solarized Light+",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Visual Studio 2019 Light",
   // "workbench.colorTheme": "Ra Spring",
@@ -55,11 +51,18 @@
   "git.suggestSmartCommit": false,
   "git.openRepositoryInParentFolders": "always",
 
-  // JavaScript
-  "javascript.updateImportsOnFileMove.enabled": "never",
-
   // ESLint
   "eslint.format.enable": true,
+
+  // JavaScript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "javascript.updateImportsOnFileMove.enabled": "never",
 
   // Java
   "[java]": {
@@ -79,12 +82,20 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off"
+    "editor.wordBasedSuggestions": "off",
+    // Flutter Icons
+    "workbench.iconTheme": "theme"
   },
 
   // Python
   "[python]": {
     "editor.formatOnType": true
+  },
+
+  // SQL
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+    "editor.formatOnSave": false
   },
 
   // LLDB
@@ -98,5 +109,12 @@
   "kotlin.languageServer.enabled": false,
   "kotlin.debugAdapter.enabled": false,
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "window.menuBarVisibility": "compact"
+  "window.menuBarVisibility": "compact",
+  "lldb.launch.expressions": "native",
+  "dart.openDevTools": "flutter",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tabnine.experimentalAutoImports": true,
+  "prisma.showPrismaDataPlatformNotification": false
 }
