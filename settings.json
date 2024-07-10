@@ -22,10 +22,10 @@
   "workbench.iconTheme": "material-icon-theme",
   // "material-icon-theme.activeIconPack": "qwik",
   // "workbench.colorTheme": "Omni",
-  "workbench.colorTheme": "Aura Dark",
+  // "workbench.colorTheme": "Aura Dark",
+  "workbench.colorTheme": "Vesper ++",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Visual Studio 2019 Light",
-  // "workbench.colorTheme": "Ra Spring",
 
   // Files
   "files.eol": "\n",
@@ -116,5 +116,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "tabnine.experimentalAutoImports": true,
-  "prisma.showPrismaDataPlatformNotification": false
+  "prisma.showPrismaDataPlatformNotification": false,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
