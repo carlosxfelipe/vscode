@@ -34,14 +34,29 @@
   "explorer.confirmDelete": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
+    "*.ts": "$(capture).*",
     "*.js": "$(capture).*",
     "*.jsx": "$(capture).*",
-    "*.ts": "$(capture).*",
-    "*.tsx": "$(capture).*"
+    "*.tsx": "$(capture).*",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.g.dart",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
   },
+  "explorer.confirmDragAndDrop": false,
+
+  // Window
+  "window.menuBarVisibility": "compact",
 
   // Terminal
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.env.osx": {},
 
   // Extensions
   "extensions.ignoreRecommendations": true,
@@ -54,6 +69,9 @@
   // ESLint
   "eslint.format.enable": true,
 
+  // CSS
+  "css.lint.unknownAtRules": "ignore",
+
   // JavaScript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -61,8 +79,16 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "javascript.updateImportsOnFileMove.enabled": "never",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Vue
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
 
   // Java
   "[java]": {
@@ -74,6 +100,8 @@
   "[kotlin]": {
     "editor.defaultFormatter": "fwcd.kotlin"
   },
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false,
 
   // Dart
   "[dart]": {
@@ -86,36 +114,43 @@
     // Flutter Icons
     "workbench.iconTheme": "theme"
   },
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": true,
+  "dart.checkForSdkUpdates": false,
+  "dart.openDevTools": "flutter",
+
+  // Go
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true
+  },
 
   // Python
   "[python]": {
     "editor.formatOnType": true
   },
+  "python.createEnvironment.trigger": "off",
 
   // SQL
   "[sql]": {
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+    // "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
     "editor.formatOnSave": false
   },
 
   // LLDB
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
-  "explorer.confirmDragAndDrop": false,
-  "dart.debugExternalPackageLibraries": true,
-  "dart.debugSdkLibraries": false,
-  "terminal.integrated.env.osx": {},
-  "dart.checkForSdkUpdates": false,
-  "redhat.telemetry.enabled": true,
-  "kotlin.languageServer.enabled": false,
-  "kotlin.debugAdapter.enabled": false,
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "window.menuBarVisibility": "compact",
   "lldb.launch.expressions": "native",
-  "dart.openDevTools": "flutter",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "tabnine.experimentalAutoImports": true,
+
+  // Prisma
   "prisma.showPrismaDataPlatformNotification": false,
-  "typescript.updateImportsOnFileMove.enabled": "always"
+
+  // TabNine
+  "tabnine.experimentalAutoImports": true,
+
+  // Diff Editor
+  "diffEditor.hideUnchangedRegions.enabled": true,
+
+  // Telemetry and Security
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "newWindow"
 }
