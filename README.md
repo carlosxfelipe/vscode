@@ -10,8 +10,9 @@ In the search box, type "Preferences: Open Settings (JSON)".
 **Themes:**
 
 - [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni)
-- [Vesper++ Theme](https://marketplace.visualstudio.com/items?itemName=Obstinate.vesper-pp)
 - [Aura Theme](https://marketplace.visualstudio.com/items?itemName=DaltonMenezes.aura-theme)
+- [Vesper++ Theme](https://marketplace.visualstudio.com/items?itemName=Obstinate.vesper-pp)
+- [Vue Theme](https://marketplace.visualstudio.com/items?itemName=mariorodeghiero.vue-theme)
 - [Fedora GNOME light & dark themes](https://marketplace.visualstudio.com/items?itemName=olifink.fedora-gnome-light-dark)
 - [Visual Studio 2019 Light](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 

@@ -21,9 +21,11 @@
   },
   "workbench.iconTheme": "material-icon-theme",
   // "material-icon-theme.activeIconPack": "qwik",
+  "material-icon-theme.activeIconPack": "nest",
   // "workbench.colorTheme": "Omni",
   // "workbench.colorTheme": "Aura Dark",
-  "workbench.colorTheme": "Vesper ++",
+  // "workbench.colorTheme": "Vesper ++",
+  "workbench.colorTheme": "Vue Theme",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Visual Studio 2019 Light",
 
@@ -38,6 +40,7 @@
     "*.js": "$(capture).*",
     "*.jsx": "$(capture).*",
     "*.tsx": "$(capture).*",
+    "*.astro": "${capture}.*",
     "tsconfig.json": "tsconfig.*.json",
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
     "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
@@ -79,6 +82,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "typescript.inlayHints.parameterNames.enabled": "all",
   "javascript.updateImportsOnFileMove.enabled": "never",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -94,6 +98,11 @@
   "[java]": {
     "editor.defaultFormatter": "mwpb.java-prettier-formatter",
     "editor.inlayHints.enabled": "off"
+  },
+
+  // Astro
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // Kotlin
@@ -127,6 +136,7 @@
 
   // Python
   "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
   "python.createEnvironment.trigger": "off",
@@ -147,10 +157,11 @@
   // TabNine
   "tabnine.experimentalAutoImports": true,
 
-  // Diff Editor
-  "diffEditor.hideUnchangedRegions.enabled": true,
-
   // Telemetry and Security
   "redhat.telemetry.enabled": true,
-  "security.workspace.trust.untrustedFiles": "newWindow"
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "[markdown]": {
+    "diffEditor.ignoreTrimWhitespace": true
+  }
 }
