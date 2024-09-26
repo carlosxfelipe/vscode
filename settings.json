@@ -82,7 +82,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.inlayHints.parameterNames.enabled": "all",
+  // "typescript.inlayHints.parameterNames.enabled": "all",
   "javascript.updateImportsOnFileMove.enabled": "never",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -102,7 +102,8 @@
 
   // Astro
   "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "editor.formatOnSave": true
   },
 
   // Kotlin
