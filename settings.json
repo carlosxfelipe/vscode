@@ -15,6 +15,8 @@
   },
 
   // Workbench
+  // "workbench.sideBar.location": "right",
+  // "workbench.activityBar.location": "bottom",
   "workbench.startupEditor": "none",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -22,10 +24,10 @@
   "workbench.iconTheme": "material-icon-theme",
   // "material-icon-theme.activeIconPack": "qwik",
   "material-icon-theme.activeIconPack": "nest",
-  // "workbench.colorTheme": "Omni",
+  "workbench.colorTheme": "Omni",
   // "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "Vesper ++",
-  "workbench.colorTheme": "Vue Theme",
+  // "workbench.colorTheme": "Vue Theme",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Visual Studio 2019 Light",
 
@@ -91,7 +93,7 @@
 
   // Vue
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    // "editor.defaultFormatter": "Vue.volar"
   },
 
   // Java
@@ -141,6 +143,12 @@
     "editor.formatOnType": true
   },
   "python.createEnvironment.trigger": "off",
+
+  // PHP
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
+  },
 
   // SQL
   "[sql]": {
