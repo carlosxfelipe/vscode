@@ -24,11 +24,11 @@
   "workbench.iconTheme": "material-icon-theme",
   // "material-icon-theme.activeIconPack": "qwik",
   "material-icon-theme.activeIconPack": "nest",
-  "workbench.colorTheme": "Omni",
+  // "workbench.colorTheme": "Omni",
   // "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "Vesper ++",
   // "workbench.colorTheme": "Vue Theme",
-  // "workbench.colorTheme": "Gnome Light (Atom One)",
+  "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Visual Studio 2019 Light",
 
   // Files
@@ -96,24 +96,11 @@
     // "editor.defaultFormatter": "Vue.volar"
   },
 
-  // Java
-  "[java]": {
-    "editor.defaultFormatter": "mwpb.java-prettier-formatter",
-    "editor.inlayHints.enabled": "off"
-  },
-
   // Astro
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode",
     "editor.formatOnSave": true
   },
-
-  // Kotlin
-  "[kotlin]": {
-    "editor.defaultFormatter": "fwcd.kotlin"
-  },
-  "kotlin.languageServer.enabled": false,
-  "kotlin.debugAdapter.enabled": false,
 
   // Dart
   "[dart]": {
@@ -149,6 +136,29 @@
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "editor.formatOnSave": true
   },
+
+  // Java
+  "[java]": {
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter",
+    "editor.inlayHints.enabled": "off"
+  },
+
+  // Kotlin
+  "[kotlin]": {
+    "editor.defaultFormatter": "fwcd.kotlin"
+  },
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false,
+
+  // C#
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "omnisharp.useModernNet": true,
+  "omnisharp.enableRoslynAnalyzers": true,
+  "omnisharp.enableEditorConfigSupport": true,
 
   // SQL
   "[sql]": {
