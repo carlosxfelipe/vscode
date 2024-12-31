@@ -27,8 +27,8 @@
   // "workbench.colorTheme": "Omni",
   // "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "Vesper ++",
-  // "workbench.colorTheme": "Vue Theme",
-  "workbench.colorTheme": "Gnome Light (Atom One)",
+  "workbench.colorTheme": "Vue Theme",
+  // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Visual Studio 2019 Light",
 
   // Files
@@ -55,9 +55,6 @@
     "*.s3db": "${capture}.${extname}-*"
   },
   "explorer.confirmDragAndDrop": false,
-
-  // Window
-  "window.menuBarVisibility": "compact",
 
   // Terminal
   "terminal.integrated.fontSize": 14,
@@ -93,7 +90,8 @@
 
   // Vue
   "[vue]": {
-    // "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
 
   // Astro
@@ -166,8 +164,15 @@
     "editor.formatOnSave": false
   },
 
+  // Swift
+  "[swift]": {
+    "editor.defaultFormatter": "sswg.swift-lang",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+
   // LLDB
-  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.library": "/usr/libexec/swift/6.0.2/lib/liblldb.so",
   "lldb.launch.expressions": "native",
 
   // Prisma
