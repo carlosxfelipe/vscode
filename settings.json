@@ -27,9 +27,9 @@
   // "workbench.colorTheme": "Omni",
   // "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "Vesper ++",
-  "workbench.colorTheme": "Vue Theme",
+  // "workbench.colorTheme": "Vue Theme",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
-  // "workbench.colorTheme": "Visual Studio 2019 Light",
+  "workbench.colorTheme": "Min Light",
 
   // Files
   "files.eol": "\n",
@@ -137,7 +137,7 @@
 
   // Java
   "[java]": {
-    "editor.defaultFormatter": "mwpb.java-prettier-formatter",
+    // "editor.defaultFormatter": "mwpb.java-prettier-formatter",
     "editor.inlayHints.enabled": "off"
   },
 
@@ -145,8 +145,8 @@
   "[kotlin]": {
     "editor.defaultFormatter": "fwcd.kotlin"
   },
-  "kotlin.languageServer.enabled": false,
-  "kotlin.debugAdapter.enabled": false,
+  "kotlin.languageServer.enabled": true,
+  "kotlin.debugAdapter.enabled": true,
 
   // C#
   "[csharp]": {
@@ -168,11 +168,12 @@
   "[swift]": {
     "editor.defaultFormatter": "sswg.swift-lang",
     "editor.formatOnSave": true,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.inlayHints.enabled": "off"
   },
 
   // LLDB
-  "lldb.library": "/usr/libexec/swift/6.0.2/lib/liblldb.so",
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
 
   // Prisma
@@ -187,5 +188,7 @@
   "diffEditor.ignoreTrimWhitespace": true,
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": true
-  }
+  },
+  "gitlens.launchpad.indicator.enabled": false,
+  "geminicodeassist.project": ""
 }
