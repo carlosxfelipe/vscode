@@ -14,7 +14,7 @@ In the search box, type "Preferences: Open Settings (JSON)".
 - [Vesper++ Theme](https://marketplace.visualstudio.com/items?itemName=Obstinate.vesper-pp)
 - [Vue Theme](https://marketplace.visualstudio.com/items?itemName=mariorodeghiero.vue-theme)
 - [Fedora GNOME light & dark themes](https://marketplace.visualstudio.com/items?itemName=olifink.fedora-gnome-light-dark)
-- [Visual Studio 2019 Light](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+- [Min Light](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme)
 
 **Icons**
 
