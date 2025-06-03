@@ -28,11 +28,13 @@
   // "workbench.colorTheme": "Aura Dark",
   // "workbench.colorTheme": "Vesper ++",
   // "workbench.colorTheme": "Vue Theme",
+  "workbench.colorTheme": "Copilot Theme",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
-  "workbench.colorTheme": "Min Light",
+  // "workbench.colorTheme": "Min Light",
 
   // Files
   "files.eol": "\n",
+  // "files.eol": "\r\n",
   "files.insertFinalNewline": true,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
@@ -111,8 +113,8 @@
     // Flutter Icons
     "workbench.iconTheme": "theme"
   },
-  "dart.debugExternalPackageLibraries": true,
-  "dart.debugSdkLibraries": true,
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
   "dart.checkForSdkUpdates": false,
   "dart.openDevTools": "flutter",
 
@@ -125,7 +127,8 @@
   // Python
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "diffEditor.ignoreTrimWhitespace": true
   },
   "python.createEnvironment.trigger": "off",
 
@@ -145,18 +148,18 @@
   "[kotlin]": {
     "editor.defaultFormatter": "fwcd.kotlin"
   },
-  "kotlin.languageServer.enabled": true,
+  "kotlin.languageServer.enabled": false,
   "kotlin.debugAdapter.enabled": true,
 
   // C#
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp",
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true
-  },
-  "omnisharp.useModernNet": true,
-  "omnisharp.enableRoslynAnalyzers": true,
-  "omnisharp.enableEditorConfigSupport": true,
+  // "[csharp]": {
+  //   "editor.defaultFormatter": "ms-dotnettools.csharp",
+  //   "editor.formatOnSave": true,
+  //   "editor.formatOnType": true
+  // },
+  // "omnisharp.useModernNet": true,
+  // "omnisharp.enableRoslynAnalyzers": true,
+  // "omnisharp.enableEditorConfigSupport": true,
 
   // SQL
   "[sql]": {
@@ -165,12 +168,12 @@
   },
 
   // Swift
-  "[swift]": {
-    "editor.defaultFormatter": "sswg.swift-lang",
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.inlayHints.enabled": "off"
-  },
+  // "[swift]": {
+  //   "editor.defaultFormatter": "sswg.swift-lang",
+  //   "editor.formatOnSave": true,
+  //   "editor.formatOnType": true,
+  //   "editor.inlayHints.enabled": "off"
+  // },
 
   // LLDB
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
@@ -182,13 +185,19 @@
   // TabNine
   "tabnine.experimentalAutoImports": true,
 
+  // Copilot
+  "github.copilot.enable": {
+    "*": true
+  },
+
   // Telemetry and Security
   "redhat.telemetry.enabled": true,
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": true
   },
   "gitlens.launchpad.indicator.enabled": false,
-  "geminicodeassist.project": ""
+  "geminicodeassist.project": "",
+  "lldb.suppressUpdateNotifications": true
 }
