@@ -8,7 +8,6 @@
   "editor.tabSize": 2,
   "editor.renderLineHighlight": "gutter",
   "editor.parameterHints.enabled": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
@@ -76,18 +75,24 @@
   // CSS
   "css.lint.unknownAtRules": "ignore",
 
-  // JavaScript
+  // Deno
+  "deno.enable": true,
+  "deno.codeLens.implementations": true,
+
+  // TypeScript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    // "editor.defaultFormatter": "denoland.vscode-deno"
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // "typescript.inlayHints.parameterNames.enabled": "all",
-  "javascript.updateImportsOnFileMove.enabled": "never",
   "[typescriptreact]": {
+    // "editor.defaultFormatter": "denoland.vscode-deno"
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
   // Vue
@@ -118,31 +123,13 @@
   "dart.checkForSdkUpdates": false,
   "dart.openDevTools": "flutter",
 
-  // Go
-  "[go]": {
-    "editor.defaultFormatter": "golang.go",
-    "editor.formatOnSave": true
-  },
-
   // Python
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true,
-    "diffEditor.ignoreTrimWhitespace": true
+    "diffEditor.ignoreTrimWhitespace": false
   },
   "python.createEnvironment.trigger": "off",
-
-  // PHP
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.formatOnSave": true
-  },
-
-  // Java
-  "[java]": {
-    // "editor.defaultFormatter": "mwpb.java-prettier-formatter",
-    "editor.inlayHints.enabled": "off"
-  },
 
   // Kotlin
   "[kotlin]": {
@@ -150,22 +137,6 @@
   },
   "kotlin.languageServer.enabled": false,
   "kotlin.debugAdapter.enabled": true,
-
-  // C#
-  // "[csharp]": {
-  //   "editor.defaultFormatter": "ms-dotnettools.csharp",
-  //   "editor.formatOnSave": true,
-  //   "editor.formatOnType": true
-  // },
-  // "omnisharp.useModernNet": true,
-  // "omnisharp.enableRoslynAnalyzers": true,
-  // "omnisharp.enableEditorConfigSupport": true,
-
-  // SQL
-  "[sql]": {
-    // "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
-    "editor.formatOnSave": false
-  },
 
   // Swift
   // "[swift]": {
@@ -178,26 +149,22 @@
   // LLDB
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
-
-  // Prisma
-  "prisma.showPrismaDataPlatformNotification": false,
-
-  // TabNine
-  "tabnine.experimentalAutoImports": true,
+  "lldb.suppressUpdateNotifications": true,
 
   // Copilot
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "typescript": false,
+    "typescriptreact": false,
+    "dart": false
   },
+  "github.copilot.nextEditSuggestions.enabled": false,
 
-  // Telemetry and Security
-  "redhat.telemetry.enabled": true,
+  // Miscellaneous
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": true
   },
-  "gitlens.launchpad.indicator.enabled": false,
-  "geminicodeassist.project": "",
-  "lldb.suppressUpdateNotifications": true
+  "gitlens.launchpad.indicator.enabled": false
 }
