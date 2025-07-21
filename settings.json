@@ -4,7 +4,9 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.lineHeight": 22,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.tabSize": 2,
   "editor.renderLineHighlight": "gutter",
   "editor.parameterHints.enabled": false,
@@ -12,7 +14,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-
   // Workbench
   // "workbench.sideBar.location": "right",
   // "workbench.activityBar.location": "bottom",
@@ -30,7 +31,6 @@
   "workbench.colorTheme": "Copilot Theme",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Min Light",
-
   // Files
   "files.eol": "\n",
   // "files.eol": "\r\n",
@@ -56,57 +56,52 @@
     "*.s3db": "${capture}.${extname}-*"
   },
   "explorer.confirmDragAndDrop": false,
-
   // Terminal
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.env.osx": {},
-
   // Extensions
   "extensions.ignoreRecommendations": true,
-
   // Git
   "git.confirmSync": false,
   "git.suggestSmartCommit": false,
   "git.openRepositoryInParentFolders": "always",
-
   // ESLint
   "eslint.format.enable": true,
-
   // CSS
   "css.lint.unknownAtRules": "ignore",
-
   // Deno
   "deno.enable": true,
   "deno.codeLens.implementations": true,
-
   // TypeScript
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "denoland.vscode-deno"
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    // "editor.defaultFormatter": "denoland.vscode-deno"
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "denoland.vscode-deno"
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // "typescript.inlayHints.parameterNames.enabled": "all",
   "[typescriptreact]": {
-    // "editor.defaultFormatter": "denoland.vscode-deno"
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "denoland.vscode-deno"
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
-
   // Vue
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-
   // Astro
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode",
     "editor.formatOnSave": true
   },
-
   // Dart
   "[dart]": {
     "editor.formatOnType": true,
@@ -122,7 +117,6 @@
   "dart.debugSdkLibraries": false,
   "dart.checkForSdkUpdates": false,
   "dart.openDevTools": "flutter",
-
   // Python
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -130,14 +124,12 @@
     "diffEditor.ignoreTrimWhitespace": false
   },
   "python.createEnvironment.trigger": "off",
-
   // Kotlin
   "[kotlin]": {
     "editor.defaultFormatter": "fwcd.kotlin"
   },
   "kotlin.languageServer.enabled": false,
   "kotlin.debugAdapter.enabled": true,
-
   // Swift
   // "[swift]": {
   //   "editor.defaultFormatter": "sswg.swift-lang",
@@ -145,21 +137,18 @@
   //   "editor.formatOnType": true,
   //   "editor.inlayHints.enabled": "off"
   // },
-
   // LLDB
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
   "lldb.suppressUpdateNotifications": true,
-
   // Copilot
   "github.copilot.enable": {
     "*": true,
-    "typescript": false,
-    "typescriptreact": false,
+    // "typescript": false,
+    // "typescriptreact": false,
     "dart": false
   },
   "github.copilot.nextEditSuggestions.enabled": false,
-
   // Miscellaneous
   "security.workspace.trust.untrustedFiles": "newWindow",
   "diffEditor.ignoreTrimWhitespace": true,
