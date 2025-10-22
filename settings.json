@@ -4,9 +4,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.lineHeight": 22,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.renderLineHighlight": "gutter",
   "editor.parameterHints.enabled": false,
@@ -88,7 +86,7 @@
   },
   // JSON
   "[json]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -137,16 +135,23 @@
   //   "editor.formatOnType": true,
   //   "editor.inlayHints.enabled": "off"
   // },
+  // Go
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true
+  },
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
   // LLDB
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
   "lldb.suppressUpdateNotifications": true,
   // Copilot
   "github.copilot.enable": {
-    "*": true,
+    "*": true
     // "typescript": false,
     // "typescriptreact": false,
-    "dart": false
+    // "dart": false
   },
   "github.copilot.nextEditSuggestions.enabled": false,
   // Miscellaneous
