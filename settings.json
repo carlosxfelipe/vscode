@@ -15,6 +15,10 @@
     "source.fixAll.eslint": "explicit"
   },
 
+  // Diff editor settings (moved here for better organization)
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+
   // =========================
   // Workbench (UI)
   // =========================
@@ -38,6 +42,9 @@
   "workbench.colorTheme": "Copilot Theme",
   // "workbench.colorTheme": "Gnome Light (Atom One)",
   // "workbench.colorTheme": "Min Light",
+
+  // Control what shows when no editor is open
+  "workbench.editor.empty.hint": "hidden",
 
   // =========================
   // Files & Explorer
@@ -224,10 +231,9 @@
   // Miscelânea
   // =========================
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "diffEditor.ignoreTrimWhitespace": true,
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": true
   },
   "gitlens.launchpad.indicator.enabled": false,
-  "geminicodeassist.displayInlineContextHint": false,
+  "geminicodeassist.displayInlineContextHint": false
 }
