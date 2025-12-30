@@ -17,7 +17,7 @@
 
   // Diff editor settings (moved here for better organization)
   "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.hideUnchangedRegions.enabled": false,
 
   // =========================
   // Workbench (UI)
@@ -194,11 +194,12 @@
 
   // Swift
   "[swift]": {
-    "editor.defaultFormatter": "swiftlang.swift-vscode",
+    "editor.defaultFormatter": "vknabel.vscode-swiftformat",
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
     "editor.inlayHints.enabled": "off"
   },
+  "swiftlint.enable": false,
 
   // Go
   "[go]": {
@@ -232,7 +233,7 @@
   // =========================
   "security.workspace.trust.untrustedFiles": "newWindow",
   "[markdown]": {
-    "diffEditor.ignoreTrimWhitespace": true
+    "diffEditor.ignoreTrimWhitespace": false
   },
   "gitlens.launchpad.indicator.enabled": false,
   "geminicodeassist.displayInlineContextHint": false
