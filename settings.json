@@ -209,6 +209,13 @@
   "go.formatTool": "goimports",
   "go.useLanguageServer": true,
 
+  // C#
+  "[csharp]": {
+  // "editor.defaultFormatter": "ms-dotnettools.csdevkit",
+  "editor.defaultFormatter": "csharpier.csharpier-vscode",
+  "editor.formatOnSave": true
+  },
+
   // =========================
   // Debuggers / Toolchains
   // =========================
