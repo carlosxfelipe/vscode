@@ -13,6 +13,7 @@ In the search box, type "Preferences: Open Settings (JSON)".
 - [Aura Theme](https://marketplace.visualstudio.com/items?itemName=DaltonMenezes.aura-theme)
 - [Vesper++ Theme](https://marketplace.visualstudio.com/items?itemName=Obstinate.vesper-pp)
 - [Vue Theme](https://marketplace.visualstudio.com/items?itemName=mariorodeghiero.vue-theme)
+- [Copilot Theme](https://marketplace.visualstudio.com/items?itemName=benjaminbenais.copilot-theme)
 - [Fedora GNOME light & dark themes](https://marketplace.visualstudio.com/items?itemName=olifink.fedora-gnome-light-dark)
 - [Min Light](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme)
 
@@ -30,78 +31,32 @@ If you're using Fedora Linux, install the FiraCode font by running the following
 sudo dnf install fira-code-fonts
 ```
 
-# TypeScriptReact Snippets
+**Extensions:**
 
-This repository contains a collection of useful TypeScriptReact snippets for Visual Studio Code. These snippets are designed to enhance your development experience by providing quick and efficient code generation for common patterns in TypeScriptReact development.
+- [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno) - TypeScript/JavaScript runtime and tooling
 
-## Installation
+  Deno comes with built-in tooling including `deno fmt` (formatter), `deno lint` (linter), and `deno test` (test runner), eliminating the need for additional formatting and linting extensions.
 
-To use these snippets in Visual Studio Code, follow these steps:
+  **⚠️ Important:** When using Deno, be careful with formatter conflicts. Deno has its own built-in formatter that may conflict with [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode). Configure `editor.defaultFormatter` per language in your settings to avoid formatting issues.
 
-1. Code > Preferences > Configure User Snippets
-2. typescriptreact.json
+- **Swift Formatting:**
 
-## Snippets
+  For Swift code formatting, install SwiftFormat via Homebrew:
 
-### 1. Log to Console
+  ```shell
+  brew install swiftformat
+  ```
 
-Trigger: `log`
+  Format a single file:
 
-```typescript
-console.log("### $TM_FILENAME line $TM_LINE_NUMBER: ", $1);
-```
+  ```shell
+  swiftformat <file>
+  ```
 
-Description: Log output to console.
+  Format all Swift files in the current directory:
 
-### 2. TypeScript React-Native Functional Component
+  ```shell
+  swiftformat .
+  ```
 
-Trigger: `aaa`
-
-```typescript
-import React from "react";
-import { View } from "react-native";
-
-export const $TM_FILENAME_BASE = (): JSX.Element => {
-  return (
-    <View>
-      <View />
-    </View>
-  );
-};
-$0;
-```
-
-Description: Create a TypeScript React-Native functional component.
-
-### 3. TypeScript React-Native Functional Component with Styles
-
-Trigger: `sss`
-
-```typescript
-import React from "react";
-import { View, StyleSheet } from "react-native";
-
-export const $TM_FILENAME_BASE = (): JSX.Element => {
-  return (
-    <View style={styles.container}>
-      <View />
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    //$0
-  },
-});
-```
-
-Description: Create a TypeScript React-Native functional component with styles.
-
-## Usage
-
-1. Open a TypeScriptReact file in Visual Studio Code.
-2. Type the snippet's trigger (e.g., `log`, `aaa`, `sss`).
-3. Press `Tab` to expand the snippet.
-
-These snippets are designed to save you time and improve your TypeScriptReact development workflow. Feel free to customize them to suit your specific needs.
+  **Note:** There is no VS Code extension configured for automatic Swift formatting. Run SwiftFormat manually when needed.

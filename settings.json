@@ -194,12 +194,14 @@
 
   // Swift
   "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-swiftformat",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnType": false,
     "editor.inlayHints.enabled": "off"
   },
   "swiftlint.enable": false,
+  
+  // SwiftFormat - Run manually with: swiftformat <file>
+  // Or format all files: swiftformat .
 
   // Go
   "[go]": {
