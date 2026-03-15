@@ -113,14 +113,14 @@
 
   // JavaScript
   "[javascript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "denoland.vscode-deno"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // TypeScript
   "[typescript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "denoland.vscode-deno"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // "typescript.inlayHints.parameterNames.enabled": "all",
 
@@ -237,7 +237,7 @@
   "lldb.suppressUpdateNotifications": true,
 
   // =========================
-  // Copilot
+  // Copilot & Antigravity
   // =========================
   "github.copilot.enable": {
     "*": true
@@ -246,6 +246,7 @@
     // "dart": false
   },
   "github.copilot.nextEditSuggestions.enabled": false,
+  "antigravity.inlineSuggest.enabled": false,
 
   // =========================
   // Miscelânea
@@ -255,5 +256,6 @@
     "diffEditor.ignoreTrimWhitespace": false
   },
   "gitlens.launchpad.indicator.enabled": false,
-  "geminicodeassist.displayInlineContextHint": false
+  "geminicodeassist.displayInlineContextHint": false,
+  "redhat.telemetry.enabled": false
 }
