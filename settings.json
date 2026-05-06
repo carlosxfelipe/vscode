@@ -1,59 +1,83 @@
 {
   // =========================
+  // Workbench (UI)
+  // =========================
+
+  // Sidebar / Activity Bar
+  // "workbench.sideBar.location": "right",
+  // "workbench.activityBar.location": "bottom",
+
+  // Startup
+  "workbench.startupEditor": "none",
+  "workbench.editor.empty.hint": "hidden",
+
+  // Themes
+  "workbench.colorTheme": "Omni",
+  // "workbench.colorTheme": "Aura Dark",
+  // "workbench.colorTheme": "Vesper ++",
+  // "workbench.colorTheme": "Vue Theme",
+  // "workbench.colorTheme": "Copilot Theme",
+  // "workbench.colorTheme": "Gnome Light (Atom One)",
+  // "workbench.colorTheme": "Min Light",
+
+  // Icons
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Editor Associations
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+
+  // =========================
+  // Material Icon Theme
+  // =========================
+
+  // "material-icon-theme.activeIconPack": "qwik",
+  "material-icon-theme.activeIconPack": "nest",
+
+  // =========================
   // Editor
   // =========================
+
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.lineHeight": 22,
-  "editor.rulers": [80],
+
   "editor.tabSize": 2,
+  "editor.rulers": [80],
+
   "editor.renderLineHighlight": "gutter",
   "editor.parameterHints.enabled": false,
+
   "editor.formatOnSave": true,
+
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
 
-  // Diff editor settings (moved here for better organization)
+  // =========================
+  // Diff Editor
+  // =========================
+
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.hideUnchangedRegions.enabled": false,
 
   // =========================
-  // Workbench (UI)
-  // =========================
-  // "workbench.sideBar.location": "right",
-  // "workbench.activityBar.location": "bottom",
-  "workbench.startupEditor": "none",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "workbench.iconTheme": "material-icon-theme",
-
-  // Material Icon Theme
-  // "material-icon-theme.activeIconPack": "qwik",
-  "material-icon-theme.activeIconPack": "nest",
-
-  // Themes
-  // "workbench.colorTheme": "Omni",
-  // "workbench.colorTheme": "Aura Dark",
-  // "workbench.colorTheme": "Vesper ++",
-  // "workbench.colorTheme": "Vue Theme",
-  "workbench.colorTheme": "Copilot Theme",
-  // "workbench.colorTheme": "Gnome Light (Atom One)",
-  // "workbench.colorTheme": "Min Light",
-
-  // Control what shows when no editor is open
-  "workbench.editor.empty.hint": "hidden",
-
-  // =========================
   // Files & Explorer
   // =========================
+
+  // Files
   "files.eol": "\n",
   // "files.eol": "\r\n",
   "files.insertFinalNewline": true,
+
+  // Explorer
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // File Nesting
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "*.ts": "$(capture).*",
@@ -61,10 +85,17 @@
     "*.jsx": "$(capture).*",
     "*.tsx": "$(capture).*",
     "*.astro": "${capture}.*",
+
     "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
-    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+
+    "package.json":
+      "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+
+    "pubspec.yaml":
+      "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+
     "*.dart": "${capture}.g.dart",
+
     "*.sqlite": "${capture}.${extname}-*",
     "*.db": "${capture}.${extname}-*",
     "*.sqlite3": "${capture}.${extname}-*",
@@ -72,29 +103,26 @@
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
   },
-  "explorer.confirmDragAndDrop": false,
 
   // =========================
   // Terminal
   // =========================
+
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.env.osx": {},
 
   // =========================
-  // Extensions
-  // =========================
-  "extensions.ignoreRecommendations": true,
-
-  // =========================
   // Git
   // =========================
+
   "git.confirmSync": false,
   "git.suggestSmartCommit": false,
   "git.openRepositoryInParentFolders": "always",
 
   // =========================
-  // Lint/Format
+  // Formatting & Linting
   // =========================
+
   // ESLint
   "eslint.format.enable": true,
 
@@ -102,13 +130,36 @@
   "css.lint.unknownAtRules": "ignore",
 
   // =========================
+  // Extensions
+  // =========================
+
+  "extensions.ignoreRecommendations": true,
+
+  // =========================
+  // AI Assistants
+  // =========================
+
+  // GitHub Copilot
+  "github.copilot.enable": {
+    "*": true
+  },
+
+  // Disable aggressive inline AI suggestions
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "editor.inlineSuggest.enabled": false,
+
+  // Antigravity
+  "antigravity.inlineSuggest.enabled": false,
+
+  // =========================
   // Deno
   // =========================
+
   "deno.enable": true,
   "deno.codeLens.implementations": true,
 
   // =========================
-  // Language Overrides
+  // JavaScript / TypeScript
   // =========================
 
   // JavaScript
@@ -122,6 +173,7 @@
     // "editor.defaultFormatter": "denoland.vscode-deno"
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   // "typescript.inlayHints.parameterNames.enabled": "all",
 
   // TypeScript React
@@ -130,31 +182,45 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  // Import Updates
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+
+  // =========================
   // JSON
+  // =========================
+
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
 
-  // Import updates
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-
+  // =========================
   // Vue
+  // =========================
+
   "[vue]": {
     // "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
 
+  // =========================
   // Astro
+  // =========================
+
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode",
     "editor.formatOnSave": true
   },
 
+  // =========================
   // Svelte
+  // =========================
+
   "svelte.enable-ts-plugin": true,
 
+  // =========================
   // Dart / Flutter
+  // =========================
+
   "[dart]": {
     "editor.formatOnType": true,
     "editor.selectionHighlight": false,
@@ -162,99 +228,129 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": "off",
+
     // Flutter Icons
     "workbench.iconTheme": "theme"
   },
+
+  // Dart Tooling
   "dart.debugExternalPackageLibraries": false,
   "dart.debugSdkLibraries": false,
   "dart.checkForSdkUpdates": false,
   "dart.openDevTools": "flutter",
 
+  // =========================
   // Python
+  // =========================
+
+  // Python Editor
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
+
     "editor.codeActionsOnSave": {
       "source.fixAll.ruff": "explicit",
       "source.organizeImports.ruff": "explicit"
     }
   },
+
+  // Python Tooling
   "python.createEnvironment.trigger": "off",
   "pylint.enabled": false,
   "python.analysis.typeCheckingMode": "off",
+
   "python.analysis.diagnosticSeverityOverrides": {
     "reportMissingImports": "none",
     "reportMissingModuleSource": "none"
   },
 
+  // =========================
   // Emmet / Django
+  // =========================
+
   "emmet.includeLanguages": {
     "django-html": "html"
   },
+
   "[django-html]": {
     "editor.formatOnSave": false
   },
 
+  // =========================
   // Kotlin
+  // =========================
+
+  // Kotlin Editor
   "[kotlin]": {
     "editor.defaultFormatter": "fwcd.kotlin"
   },
+
+  // Kotlin Tooling
   "kotlin.languageServer.enabled": false,
   "kotlin.debugAdapter.enabled": true,
 
+  // =========================
   // Swift
+  // =========================
+
+  // Swift Editor
   "[swift]": {
     "editor.formatOnSave": false,
     "editor.formatOnType": false,
     "editor.inlayHints.enabled": "off"
   },
+
+  // Swift Tooling
   "swiftlint.enable": false,
-  
+
   // SwiftFormat - Run manually with: swiftformat <file>
   // Or format all files: swiftformat .
 
+  // =========================
   // Go
+  // =========================
+
+  // Go Editor
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true
   },
+
+  // Go Tooling
   "go.formatTool": "goimports",
   "go.useLanguageServer": true,
 
+  // =========================
   // C#
+  // =========================
+
   "[csharp]": {
-  // "editor.defaultFormatter": "ms-dotnettools.csdevkit",
-  "editor.defaultFormatter": "csharpier.csharpier-vscode",
-  "editor.formatOnSave": true
+    // "editor.defaultFormatter": "ms-dotnettools.csdevkit",
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.formatOnSave": true
   },
 
   // =========================
   // Debuggers / Toolchains
   // =========================
+
   // LLDB
-  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.library":
+    "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+
   "lldb.launch.expressions": "native",
   "lldb.suppressUpdateNotifications": true,
 
   // =========================
-  // Copilot & Antigravity
+  // Misc
   // =========================
-  "github.copilot.enable": {
-    "*": true
-    // "typescript": false,
-    // "typescriptreact": false,
-    // "dart": false
-  },
-  "github.copilot.nextEditSuggestions.enabled": false,
-  "antigravity.inlineSuggest.enabled": false,
 
-  // =========================
-  // Miscelânea
-  // =========================
   "security.workspace.trust.untrustedFiles": "newWindow",
+
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": false
   },
+
   "gitlens.launchpad.indicator.enabled": false,
   "geminicodeassist.displayInlineContextHint": false,
   "redhat.telemetry.enabled": false
